@@ -1,0 +1,1 @@
+./mvnw spring-boot:build-image -Dmaven.test.skip -Dspring-boot.build-image.imageName=geekslist-backend

@@ -2,12 +2,17 @@ package hdm.stuttgart.geekslist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
-public class GeekslistApplication {
+@EnableCaching
+public class GeeksListApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GeekslistApplication.class, args);
+	GeeksListApplication() {
+		// Empty constructor required for partial context when testing
 	}
 
+	public static void main(String[] args) {
+		SpringApplication.run(GeeksListApplication.class, args);
+	}
 }
